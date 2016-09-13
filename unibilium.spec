@@ -42,6 +42,8 @@ Development files needed for %{name}.
 %build
 %{__make} \
 	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}" \
 	PREFIX=%{_prefix} \
 	LIBDIR=%{_libdir}
 
