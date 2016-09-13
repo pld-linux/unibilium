@@ -14,6 +14,7 @@ Source0:	https://github.com/mauke/unibilium/archive/v%{version}/%{name}-%{versio
 URL:		https://github.com/mauke/unibilium
 BuildRequires:	gcc
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 %if %{with doc}
 BuildRequires:	/usr/bin/pod2man
 %endif
