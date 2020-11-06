@@ -5,12 +5,12 @@
 
 Summary:	Terminfo parsing library
 Name:		unibilium
-Version:	1.2.0
+Version:	2.0.0
 Release:	1
 License:	LGPLv3+
 Group:		Libraries
 Source0:	https://github.com/mauke/unibilium/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	9b1c97839a880a373da6c097443b43c4
+# Source0-md5:	a89b8ef6e752cc76098e1863ff4b5457
 URL:		https://github.com/mauke/unibilium
 BuildRequires:	gcc
 BuildRequires:	libtool
