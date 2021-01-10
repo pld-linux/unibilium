@@ -6,7 +6,7 @@
 Summary:	Terminfo parsing library
 Name:		unibilium
 Version:	2.0.0
-Release:	1
+Release:	2
 License:	LGPLv3+
 Group:		Libraries
 Source0:	https://github.com/mauke/unibilium/archive/v%{version}/%{name}-%{version}.tar.gz
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %attr(755,root,root) %{_libdir}/libunibilium.so.*.*.*
-%ghost %{_libdir}/libunibilium.so.0
+%ghost %{_libdir}/libunibilium.so.4
 
 %files devel
 %defattr(644,root,root,755)
