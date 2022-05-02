@@ -1,25 +1,26 @@
 #
 # Conditional build:
-%bcond_without	tests	# build without tests
+%bcond_without	tests		# build without tests
 %bcond_without	doc		# build doc
 
 Summary:	Terminfo parsing library
 Name:		unibilium
-Version:	2.0.0
-Release:	2
+Version:	2.1.1
+Release:	1
 License:	LGPLv3+
 Group:		Libraries
-Source0:	https://github.com/mauke/unibilium/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	a89b8ef6e752cc76098e1863ff4b5457
-URL:		https://github.com/mauke/unibilium
-BuildRequires:	gcc
+Source0:	https://github.com/neovim/unibilium/archive/v%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	845c59ce10150d7808ee9862fef231cb
+URL:		https://github.com/neovim/unibilium
 BuildRequires:	libtool
+BuildRequires:	ncurses-devel
 BuildRequires:	pkgconfig
 %if %{with doc}
-BuildRequires:	/usr/bin/pod2man
+BuildRequires:	perl-tools-pod
 %endif
 %if %{with tests}
 BuildRequires:	/usr/bin/prove
+BuildRequires:	perl-base
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
